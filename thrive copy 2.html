@@ -1,0 +1,3484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thrive Holdings | Strategic Communication & Marketing</title>
+
+    <meta
+        name="description"
+        content="Thrive Holdings is a strategic communication and marketing consultancy helping organizations, businesses and leaders grow intentionally."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =====================================================
+           THRIVE HOLDINGS
+           MODERN CORPORATE WEBSITE
+        ===================================================== */
+
+        :root {
+            --maroon: #7A1028;
+            --dark-maroon: #4A0718;
+            --black: #090909;
+            --white: #f5f5f5;
+            --light: #f6f4f3;
+            --gray: #4A0718;
+            --border: #e7e3e2;
+
+            --container: 1200px;
+            --radius: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .logo-mark img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                    padding: 0%;
+                }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(90%, var(--container));
+            margin: auto;
+        }
+
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background: rgba(218, 206, 206, 0.92);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .navbar {
+            height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .logo-mark {
+            width: 38px;
+            height: 38px;
+
+            display: grid;
+            place-items: center;
+
+            background: var(--maroon);
+            color: white;
+
+            border-radius: 9px;
+
+            font-weight: 800;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--maroon);
+        }
+
+        .nav-cta {
+            background: var(--black);
+            color: white;
+
+            padding: 12px 20px;
+            border-radius: 50px;
+        }
+
+        .nav-cta:hover {
+            background: var(--maroon) !important;
+            color: white !important;
+        }
+
+        .menu-btn {
+            display: none;
+
+            border: none;
+            background: none;
+
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            padding-top: 100px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 30%,
+                    rgba(122,16,40,0.13),
+                    transparent 35%
+                );
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+
+            align-items: center;
+            gap: 80px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            color: var(--maroon);
+
+            font-size: 13px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            margin-bottom: 25px;
+        }
+
+        .eyebrow::before {
+            content: "";
+
+            width: 30px;
+            height: 2px;
+
+            background: var(--maroon);
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(52px, 7vw, 92px);
+            line-height: 0.98;
+
+            letter-spacing: -4px;
+
+            margin-bottom: 30px;
+        }
+
+        .hero h1 span {
+            color: var(--maroon);
+        }
+
+        .hero-description {
+            max-width: 620px;
+
+            color: #555;
+
+            font-size: 18px;
+            line-height: 1.8;
+
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 15px 25px;
+
+            border-radius: 50px;
+
+            font-weight: 700;
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--maroon);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--dark-maroon);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid #ccc;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--maroon);
+            color: var(--maroon);
+        }
+
+        /* Hero visual */
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-card {
+            min-height: 500px;
+
+            background: var(--black);
+            color: white;
+
+            border-radius: 30px;
+
+            padding: 40px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        .hero-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            background: var(--maroon);
+
+            right: -120px;
+            top: -100px;
+        }
+
+        .hero-card::after {
+            content: "";
+
+            position: absolute;
+
+            width: 200px;
+            height: 200px;
+
+            border: 1px solid rgba(255,255,255,0.2);
+
+            border-radius: 50%;
+
+            left: -80px;
+            bottom: -80px;
+        }
+
+        .hero-card-content {
+            position: relative;
+            z-index: 2;
+        }
+.service-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+        .hero-card small {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            color: #bbb;
+        }
+
+        .hero-card h2 {
+            font-family: "Playfair Display", serif;
+
+            font-size: 50px;
+            line-height: 1.05;
+
+            margin-top: 20px;
+        }
+
+        .hero-card-bottom {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-card-bottom p {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+
+            border: 1px solid rgba(255,255,255,0.25);
+
+            padding: 8px 13px;
+
+            border-radius: 30px;
+
+            font-size: 12px;
+
+            margin: 3px;
+        }
+
+        /* =====================================================
+           CLIENT STRIP
+        ===================================================== */
+
+        .client-strip {
+            background: var(--black);
+            color: white;
+
+            padding: 35px 0;
+        }
+
+        .client-strip p {
+            text-align: center;
+
+            color: #aaa;
+
+            font-size: 12px;
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 20px;
+        }
+
+        .client-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .client-logos span {
+            font-size: 17px;
+            font-weight: 700;
+
+            color: #ddd;
+        }
+
+        /* =====================================================
+           GENERAL SECTIONS
+        ===================================================== */
+
+        section {
+            padding: 120px 0;
+        }
+
+        .section-header {
+            max-width: 750px;
+
+            margin-bottom: 65px;
+        }
+
+        .section-header h2 {
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(42px, 5vw, 65px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 20px;
+        }
+
+        .section-header p {
+            color: var(--gray);
+            font-size: 17px;
+        }
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about {
+            background: var(--maroon);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 80px;
+
+            align-items: start;
+        }
+
+        .about-number {
+            font-family: "Playfair Display", serif;
+
+            font-size: 150px;
+
+            line-height: 0.8;
+
+            color: var(--maroon);
+        }
+
+        .about-text h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #fdfcfc;
+            margin-bottom: 25px;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 15px;
+
+            margin-top: 35px;
+        }
+
+        .value {
+            background: rgb(8, 8, 8);
+
+            padding: 25px;
+
+            border-radius: var(--radius);
+
+            border: 1px solid var(--border);
+        }
+
+        .value h4 {
+            color: var(--maroon);
+            margin-bottom: 8px;
+        }
+
+        .value p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+            gap: 20px;
+        }
+
+        .service-card {
+            padding: 40px;
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            transition: 0.35s;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            background: var(--black);
+            color: white;
+
+            transform: translateY(-7px);
+        }
+
+        .service-number {
+            font-size: 13px;
+            color: var(--maroon);
+
+            font-weight: 700;
+
+            margin-bottom: 40px;
+        }
+
+        .service-card h3 {
+            font-family: "Playfair Display", serif;
+
+            font-size: 34px;
+
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #777;
+        }
+
+        .service-card:hover p {
+            color: #bbb;
+        }
+
+        .service-list {
+            margin-top: 25px;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .service-list span {
+            padding: 7px 11px;
+
+            border-radius: 30px;
+
+            background: #f1eeee;
+
+            font-size: 12px;
+        }
+
+        .service-card:hover .service-list span {
+            background: #252525;
+        }
+
+        /* =====================================================
+           STATS
+        ===================================================== */
+
+        .stats {
+            background: var(--maroon);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4,1fr);
+
+            gap: 30px;
+        }
+
+        .stat {
+            border-left: 1px solid rgba(255,255,255,0.3);
+
+            padding-left: 25px;
+        }
+
+        .stat h3 {
+            font-size: 45px;
+            line-height: 1;
+
+            margin-bottom: 10px;
+        }
+
+        .stat p {
+            color: #eadfe2;
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           CASE STUDIES
+        ===================================================== */
+
+        .work {
+            background: var(--light);
+        }
+
+        .case-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2,1fr);
+
+            gap: 25px;
+        }
+
+        .case-card {
+            background: white;
+
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            border: 1px solid var(--border);
+
+            transition: 0.3s;
+        }
+
+        .case-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .case-image {
+            height: 260px;
+
+            background: var(--black);
+
+            display: flex;
+            align-items: flex-end;
+
+            padding: 30px;
+
+            color: white;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-image::before {
+            content: "";
+
+            position: absolute;
+
+            width: 230px;
+            height: 230px;
+
+            border-radius: 50%;
+
+            background: var(--maroon);
+
+            right: -70px;
+            top: -70px;
+        }
+
+        .case-image h3 {
+            position: relative;
+            z-index: 2;
+
+            font-family: "Playfair Display", serif;
+
+            font-size: 32px;
+        }
+
+        .case-content {
+            padding: 30px;
+        }
+
+        .case-content p {
+            color: var(--gray);
+
+            font-size: 14px;
+
+            margin-bottom: 25px;
+        }
+
+        .case-result {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            border-top: 1px solid var(--border);
+
+            padding-top: 20px;
+        }
+
+        .case-result strong {
+            color: var(--maroon);
+
+            display: block;
+
+            font-size: 22px;
+        }
+
+        .case-result span {
+            color: #888;
+
+            font-size: 11px;
+        }
+        .book-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    max-height: 500px;
+    overflow-y: auto;
+
+    padding-right: 10px;
+}
+
+.book-slide {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 35px;
+
+    padding: 25px;
+
+    background: var(--card-bg);
+    border-radius: 20px;
+
+    border: 1px solid rgba(128, 0, 32, 0.15);
+}
+
+.book-image {
+    width: 100%;
+    height: 320px;
+
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-content small,
+.case-content small {
+    color: #800020;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.book-content h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.case-study-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.case-card {
+    overflow: hidden;
+    background: var(--card-bg);
+    border-radius: 20px;
+    border: 1px solid rgba(128, 0, 32, 0.15);
+}
+
+.case-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.case-image::before,
+.case-image::after {
+    display: none !important;
+}
+.case-image img {
+    width: 170%;
+    height: 105%;
+    object-fit:fill;
+    max-width: 170%;
+    padding: 0;
+    position: relative;
+    border-radius: 3%;
+  
+}
+
+.case-content {
+    padding: 25px;
+}
+
+.case-content h3 {
+    font-size: 25px;
+    margin: 8px 0 12px;
+}
+
+.case-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.case-results div {
+    padding: 15px;
+    background: rgba(128, 0, 32, 0.06);
+    border-radius: 10px;
+}
+
+.case-results strong {
+    display: block;
+    color: #800020;
+    font-size: 22px;
+}
+
+.case-results span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+
+    .book-slide {
+        grid-template-columns: 1fr;
+    }
+
+    .book-image {
+        height: 280px;
+    }
+
+    .case-study-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-results {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+        /* =====================================================
+           PROCESS
+        ===================================================== */
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns: repeat(6,1fr);
+
+            gap: 12px;
+        }
+
+        .process-step {
+            padding: 25px 15px;
+
+            border-top: 2px solid var(--black);
+
+            position: relative;
+        }
+
+        .process-step span {
+            color: var(--maroon);
+
+            font-size: 12px;
+
+            font-weight: 700;
+        }
+
+        .process-step h3 {
+            margin: 18px 0 10px;
+
+            font-size: 18px;
+        }
+
+        .process-step p {
+            color: #777;
+
+            font-size: 12px;
+        }
+
+        /* =====================================================
+           TEAM
+        ===================================================== */
+
+        .team {
+            background: var(--black);
+            color: white;
+        }
+
+        .team .section-header p {
+            color: #aaa;
+        }
+
+        .team-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 20px;
+        }
+
+        .team-card {
+            background: #151515;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+        }
+
+        .team-photo {
+            height: 330px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--maroon),
+                    #1a1a1a
+                );
+
+            display: flex;
+            align-items: flex-end;
+
+            padding: 25px;
+        }
+
+        .team-photo span {
+            font-family: "Playfair Display", serif;
+
+            font-size: 60px;
+
+            opacity: 0.8;
+        }
+
+        .team-info {
+            padding: 25px;
+        }
+
+        .team-info h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .team-info p {
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta {
+            background: var(--maroon);
+            color: rgb(250, 158, 158);
+
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(45px,6vw,80px);
+
+            line-height: 1;
+
+            max-width: 900px;
+
+            margin: auto auto 25px;
+        }
+
+        .cta p {
+            color: #eadfe2;
+
+            max-width: 600px;
+
+            margin: 0 auto 30px;
+        }
+
+        .cta .btn {
+            background: white;
+            color: var(--black);
+        }
+
+        .cta .btn:hover {
+            background: var(--black);
+            color: white;
+        }
+        .team-photo {
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    border-radius: 300;
+     max-width: 450px;padding: 0;
+     image-resolution: inherit;
+     resize: cover;
+}
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 80px;
+        }
+
+        .contact-info h3 {
+            font-family: "Playfair Display", serif;
+
+            font-size: 40px;
+
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        .contact-detail {
+            margin-bottom: 20px;
+        }
+
+        .contact-detail small {
+            display: block;
+
+            text-transform: uppercase;
+
+            color: var(--maroon);
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+        }
+
+        .contact-form {
+            display: grid;
+
+            grid-template-columns: repeat(2,1fr);
+
+            gap: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+
+            padding: 15px 17px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 10px;
+
+            font-family: inherit;
+
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--maroon);
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: var(--black);
+            color: white;
+
+            padding: 70px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+
+            gap: 50px;
+
+            padding-bottom: 50px;
+
+            border-bottom: 1px solid #292929;
+        }
+
+        .footer-brand p {
+            color: #888;
+
+            max-width: 350px;
+
+            margin-top: 20px;
+        }
+
+        footer h4 {
+            margin-bottom: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 10px;
+        }
+
+        footer li a {
+            color: #888;
+            font-size: 14px;
+        }
+
+        footer li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: space-between;
+
+            padding-top: 25px;
+
+            color: #666;
+
+            font-size: 12px;
+        }
+
+        /* =====================================================
+           ANIMATION
+        ===================================================== */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+
+            transition: 0.7s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                position: absolute;
+
+                top: 82px;
+                left: 0;
+
+                width: 100%;
+
+                background: white;
+
+                flex-direction: column;
+
+                padding: 25px;
+
+                display: none;
+
+                border-bottom: 1px solid var(--border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 150px;
+            }
+
+            .hero-card {
+                min-height: 400px;
+            }
+
+            .services-grid,
+            .case-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 80px 0;
+            }
+
+            .hero h1 {
+                font-size: 55px;
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full {
+                grid-column: auto;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .copyright {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .client-logos {
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <div class="logo-mark"><img src="thrive logo.png" alt="THRIVE HOLDINGS Logo">
+                
+            
+            </div>
+            THRIVE HOLDINGS
+     </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+        
+            <li>
+                <a href="#about">About</a>
+            </li>
+            
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#work">Our Work</a>
+            </li>
+
+            <li>
+                <a href="#stats">Process</a>
+            </li>
+
+            <li>
+                <a href="#team">Team</a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-cta">
+                    Start a Conversation
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            
+           <b><p>Trusted across industries</p></b>
+           <img src="clients_logos-removebg-preview.png" alt="THRIVE HOLDINGS clients logos" class="clients-logos">
+            <h1>
+                Where Brands <span>& companies</span>
+                <span>Thrive.</span>
+            </h1><div class="eyebrow">
+                <p>Strategic Communication and Marketing Consultancy agency located
+                    in kampala, uganda
+                </p>
+            </div>
+
+            <p class="hero-description">
+               <strong>We help organizations, businesses and leaders achieve
+                their goals through strategic marketing, communication,
+                creativity and data-driven execution.</strong> 
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Start a Conversation →
+                </a>
+
+                <a href="#work" class="btn btn-outline">
+                    Explore Our Work
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual reveal">
+
+            <div class="hero-card">
+
+                <div class="hero-card-content">
+
+                    <small>
+                        THRIVE HOLDINGS
+                    </small>
+                   <div class="service-image">
+                    <img src="book card hero class.png" alt="THRIVE HOLDINGS publishing card">
+                    
+               <small>Publishing</small>
+
+    <h3>Publish Your Book</h3>
+
+    <p>
+        We help authors turn their ideas into professionally
+        published books.
+    </p>
+ </div>
+
+                    <h2>
+                        Strategy.<br>
+                        Creativity.<br>
+                        Impact.
+                    </h2>
+
+                </div>
+
+                <div class="hero-card-bottom">
+
+                    <p>
+                        Strategic communication and marketing
+                        solutions designed for sustainable growth.
+
+                    
+                    </p>
+
+                    <div>
+
+                        <span class="tag">
+                            Marketing
+                        </span>
+
+                        <span class="tag">
+                            PR
+                        </span>
+
+                        <span class="tag">
+                            Publishing
+                        </span>
+
+                        <span class="tag">
+                            Content
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ </section>
+
+
+<!-- =====================================================
+     CLIENT STRIP
+===================================================== -->
+
+<div class="client-strip">
+
+    <div class="container">
+<p>We have worked with organizations, businesses and leaders across multiple industries.</p>
+        <h3>
+        
+             <b>                                         INDUSTRIES WE SERVE INCLUDE ;</b><br><br>
+            
+        
+              </h3>
+
+        <div class="client-logos">
+
+            <span>✓
+ BANKING
+</span><br>
+            <span>✓
+ HEALTHCARE</span>
+            <br><span>✓
+ NGOS & DEVELOPMENT</span><br>
+            <span>✓
+ GOVERNMENT</span>
+            <span>✓
+ EDUCATION</span>
+ <span>✓
+ HOSPITALITY</span><br>
+ <span>✓
+ MANUFACTURING</span>
+ <span>✓
+ FMCGS</span>
+ <span>✓
+ PERSONAL BRANDS</span>
+ <span>✓
+ PROFESSIONAL SERVICES</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="eyebrow">
+                Who We Are
+            </div>
+
+            <h2>
+                Strategy before execution.
+            </h2>
+
+            <p>
+                Thrive Holdings is a multidimensional strategic and corporate
+communication consultancy delivering corporate
+communication strategy digital marketing,
+public relations, and book publishing solutions for brands,
+organizations, and executives.
+Backed by a team with over a 20 years of collective
+experience in digital marketing, public relations,
+publishing, and brand activation, we are passionate,
+strategic, agile, and results-focused.<br>
+Our work is strategy-led, data-informed, and designed to drive
+sustainable brand growth
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-number reveal">
+                20+
+            </div>
+
+
+            <div class="about-text reveal">
+
+                <h3>
+                    A strategic partner for brands ready to grow.
+                </h3>
+
+                <p>
+                    Thrive Holdings is a multidimensional strategic and
+                    corporate communication consultancy delivering
+                    corporate communication strategy, digital marketing,
+                    public relations and book publishing solutions.
+                </p>
+
+                <p>
+                    Our team brings collective experience across digital
+                    marketing, public relations, publishing, brand
+                    activation and corporate communication.
+                </p>
+
+
+                <div class="values">
+
+                    <div class="value">
+
+                        <h4>
+                            Strategy
+                        </h4>
+
+                        <p>
+                            We plan where you're going before execution.
+                        </p>
+
+                    </div>
+
+
+                    <div class="value">
+
+                        <h4>
+                            Data
+                        </h4>
+
+                        <p>
+                            Decisions are informed by research and data.
+                        </p>
+
+                    </div>
+
+
+                    <div class="value">
+
+                        <h4>
+                            Creativity
+                        </h4>
+
+                        <p>
+                            We turn strategic thinking into powerful ideas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="eyebrow">
+                <b>OUR SERVICES</b>
+            </div>
+
+            <h2>
+                Built around your growth.
+            </h2>
+
+            <p>
+                Our services combine strategy, communication,
+                marketing, creativity and publishing.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">
+                    01 / MARKETING
+                </div>
+
+                <h3>
+                    Strategic Marketing
+                </h3>
+
+                <p>
+                   We help brands stand out with tailored 360°
+marketing strategies designed for impact
+and long-term growth. Our expertise spans:</p>
+<ul>
+<li>Digital Marketing</li>We craft data-driven
+digital strategies that enhance brand
+visibility and engagement. <br> lncludes:<br>
+<li>Corporate Identity Development</li>
+Logo design, brand guidelines, and identity creation.
+<li>Content Creation</li> 
+ High-quality copywriting and 
+graphics.
+<li>Social Media Management</li>
+    Strategy, content planning,posting, engagement,and analytics.
+<li>Media Buying</li> 
+ Ad placements on social media, search
+engines, and digital platforms.
+<li>Influencer Marketing</li>
+Strategic collaborations with
+influencers to boost credibility and reach.
+<li>Reporting & Monitoring</li>
+Monthly and Annual performance tracking, analytics, and campaign
+optimization.
+<li>BTL Event Marketing</li>
+ We execute marketing strategies across all stages: pre-event, during the event,
+  and post event to maximize impact and engagement.
+<li> Marketing Advisory </li>
+ Beyond digital,we amplify brand presence through TV, radio, and
+newspaper ads, ensuring a strong offline reach as necessary.
+</ul>
+Advisory and consultancy
+
+                <div class="service-list">
+
+                    <span>Brand Strategy</span>
+                    <span>Digital Marketing</span>
+                    <span>Content Strategy</span>
+                    <span>Influencer Marketing</span>
+                    <span>BTL Event Marketing</span>
+                    <span>Paid Media</span>
+                    <span>Social media management</span>
+                    <span>Marketing Advisory</span>
+                     <span>Corporate Identity Development</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">
+                    02 / COMMUNICATION
+                </div>
+
+                <h3>
+                    Strategic Communications
+                </h3>
+
+                <p>
+                    We position organizations, brands and leaders
+                    through strategic communication and reputation
+                    management.
+                </p>
+
+                <div class="service-list">
+
+                    <span>Public Relations</span>
+                    <span>Media Relations</span>
+                    <span>Crisis Management</span>
+                    <span>Corporate Communication</span>
+                    <span>CEO Branding</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">
+                    03 / PUBLISHING
+                </div>
+
+                <h3>
+                    Book Publishing&
+                    <span>Author services</span>
+                </h3>
+
+                <p>
+                    We go beyond publishing,we build author brands 
+                    and offer end-to-end publishing solutions.
+                    <br> Our services include:
+                    <ul>
+                        <li>ISBN Registration & Legal Compliance.
+                             We handle all book registration requirements for
+authors.</li>
+                        <li>Professional Editing & Literary Consulting.
+                             Expert editors trained in manuscript development,
+ghostwriting, and creative writing. </li>
+                        <li>Author Branding & Marketing.
+                            Tailored strategies to help authors build their brand and sell more books. 
+                            Innovative Publishing Solutions – We are developing the Thrive Readers & Writers
+App, a digital marketplace that allows readers to access books easily and authors to publish &
+earn seamlessly. </li>
+                        <li>Book Publishing. 
+                            We edit, proofread, typeset, design, and publish books. Book Launches and
+Tours: We organize and market customized book launches </li>
+                        <li>Book Marketing & Distribution.
+                            Helping authors promote and sell their work effectively. </li>
+                            <li>Author Brand Management.
+                            Positioning authors for success through branding, PR, and social media strategies.</li>
+                             <li>Print & Branding Services.
+                                 Design and printing of corporate materials, brochures, banners, and
+other branded merchandise.</li>
+<li>Tours.
+                        We organize and market customized book launches </li>
+                </p>
+
+
+                <div class="service-list">
+
+                    <span>Editing</span>
+                    <span>Book Publishing</span>
+                    <span>Typesetting</span>
+                    <span>ISBN</span>
+                    <span>Author&brand Marketing</span>
+                    <span>Book Launches</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">
+                    04 / CONTENT
+                </div>
+
+                <h3>
+                    Thrive Content creation Studio
+                </h3>
+
+                <p>
+                    A creative environment for producing high-quality
+                    visual and audio content for modern brands.
+                    Services available include;
+                    <ul>
+                        <li>Video Shoots.
+                            High-quality brand videos, interviews, and marketing content.. </li>
+                        <li>Photoshoots-Professional headshots, product photography, and branding sessions. </li>
+                        <li>Podcasts & Audio Production.
+                            A soundproofed space for podcast recording and voice overs. </li>
+                        <li>Live Streaming & Webinars.
+                            Hosting and streaming live sessions for businesses, brands, and
+influencers. </li>
+                        <li>Product Photography & Videography.
+                             E-commerce shoots, catalog images, and promotional videos.</li>
+                
+                <li>Masterclasses & Training Sessions 
+                    Hosting small marketing, branding, and content creation
+workshops.</li>            
+            </ul>
+            </p>
+
+                <div class="service-list">
+
+                    <span>Photography</span>
+                    <span>Video</span>
+                    <span>Podcasts</span>
+                    <span>Reels</span>
+                    <span>Livestreams</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">
+                    05 / TRAINING and CAPACITY BUILDING
+                </div>
+
+                <h3>
+We empower brands, businesses, and 
+creatives through skill-based training
+programs. Our workshops and trainings 
+are tailored to equip clients with practical, 
+actionable knowledge.
+                </h3>
+                <br>
+
+                <p>
+                    Our services include:
+                </p>
+                <br>
+                    <ul>
+                        <li>Digital Marketing & Branding Workshops.
+                            Helping businesses navigate the digital
+space. </li>
+                        <li>Author Development Cohorts.
+                            Guiding
+writers from manuscript to successful
+publishing. </li>
+                        <li>Corporate & Personal Branding.
+                            Helping
+individuals and businesses craft a
+compelling brand identity. </li>
+                        <li>Customized Trainings.
+                            Tailored sessions
+based on industry-specific needs.</li>
+                    </ul>
+                    <br>
+                    <h5>Thrive Learning  Our dedicated writer’s school,
+designed to nurture and support budding authors
+and marketers.</h5>
+                </p>
+
+                <div class="service-list">
+
+                    <span>Customized Trainings</span>
+                    <span>Author Development Cohorts</span>
+                    <span>Author Masterclasses</span>
+                    <span>Digital Marketing & Branding</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">
+                    06 / Public Relations
+                </div>
+
+                <h3>
+Public Relations
+& Reputation Management
+                </h3>
+
+                <p>
+We position brands and corporate profiles
+for success through result-driven and
+measurable PR strategies.
+
+                </p>
+                <p> Our services include:</p>
+                    <ul>
+                        <li>Media Relations ;
+                            Securing press coverage,
+interviews, and news features. </li>
+                        <li>Strategic Partnerships ;
+                            Connecting brandswith influential partners for greater
+                            visibility. </li>
+                        <li>Crisis Communication ;
+                            Managing andmitigating reputational risks. </li>
+                        <li>Thought Leadership ;
+                            Positioning
+executives and brands as industry leaders
+through expert content, speaking
+engagements, and editorial placements</li>
+                        <li>Brand Reputation Management.
+We aim for brand positive mentions through online
+and offline reputation monitoring,
+sentiment analysis, and response
+strategies</li>
+                    </ul>
+Training &
+3
+Capacity
+Building
+We empower brands, businesses, and 
+creatives through skill-based training
+programs. Our workshops and trainings 
+are tailored to equip clients with practical, 
+actionable knowledge.
+Our Training Programs Include:
+Digital Marketing & Branding Workshops
+Helping businesses navigate the digital
+space. 
+Author Development Cohorts
+ Guiding
+writers from manuscript to successful
+publishing. 
+Corporate & Personal Branding 
+Helping
+individuals and businesses craft a
+compelling brand identity. 
+Customized Trainings 
+Tailored sessions
+based on industry-specific needs.
+</li>
+
+                <div class="service-list">
+
+                    <span>Brand Audits</span>
+                    <span>Strategy</span>
+                    <span>Research</span>
+                    <span>Measurement</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats" id="stats">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="eyebrow">
+                Our Process
+            </div>
+
+            <p><h2>
+                How  <br> we help brands grow and thrive.
+            </h2></p>
+
+            <p>
+                A 6-step marketing process designed to help brands grow and thrive in the market.
+            </p>
+
+        </div>
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat reveal">
+
+                <h3><span>Our Marketing</span> Process</h3>
+
+                <p>
+                    6 strategic steps to help brands grow and thrive in the market.
+                </p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+
+                <h3>Step 1</h3>
+
+                     <h2>Research</h2>
+                     <ul>
+                    <li>We start by gathering insights about the 
+marketing problem through comprehensive
+brand audits, client interviews and
+benchmark analysis</li>
+                     </ul>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <h3>Step 2</h3>
+                <p>
+                    <h2>Marketing Strategy</h2>
+                </p>
+                <ul>
+                    <li>With these insights
+and the client’s
+preferences, we
+develop an annual
+strategy with several
+tactics such as
+experiential, media
+buy or influencer
+campaigns</li>
+                </ul>
+
+            </div>
+
+            <div class="stat reveal">
+
+                <h3>Step 3</h3>
+
+                <p>
+                    <h2>Creative Ideation</h2>  
+                </p>
+                <ul>
+                    <li>We then bring our
+marketing strategy
+to life through
+brand mockups to
+vividly envision
+where the brand
+will be, say in a
+space of a year</li>
+                </ul>
+
+            </div>
+            <div class="stat reveal">
+
+                <h3>Step 4</h3>
+
+                <p>
+                  <h2>Production</h2>
+                </p>
+                <ul>
+                    <li>We then convert our
+creative ideas into
+tangible materials e.g.,
+actual social media
+posts or pull up
+banners </li>
+                </ul>
+
+            </div>
+<div class="stat reveal">
+
+                <h3>Step 5</h3>
+
+                <p>
+                    <h2>Execution</h2>
+                </p>
+                <ul>
+                    <li>We then continuously
+publish our marketing
+materials based on
+strategy for example
+through continuous
+social media posts or
+Ads</li>
+                </ul>
+
+            </div>
+            <div class="stat reveal">
+
+                <h3>Step 6</h3>
+
+                <p>
+                    <h2>M&E</h2>
+                    <ul>
+                        <li>To determine whether
+we are achieving our
+objectives and the
+client's targets, we
+constantly assess
+ourselves through
+monthly and annual
+reports.</li>
+                        </ul>
+                </p>
+                <ul></ul>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CASE STUDIES
+===================================================== -->
+
+<section class="work" id="work">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="eyebrow">
+               <h4>Selected Work</h4>
+            </div>
+<section class="work-section">
+
+    <div class="section-heading">
+        <h3><span>OUR PORTFOLIO</span><h
+        <h2>Some of Our Work</h2>
+        <p>
+            A selection of Marketing and case studies for brand-growth
+            work delivered by THRIVE HOLDINGS.
+        </p>
+    </div>
+
+
+    <!-- ================= PUBLISHING ================= -->
+
+    <div class="work-category">
+
+        <div class="category-heading">
+            <span>01</span>
+            <div>
+                <h3>Publishing</h3>
+                <p>Books and publishing projects</p>
+            </div>
+        </div>
+
+        <div class="book-slider">
+
+            <div class="book-slide">
+                <div class="book-image">
+                    <img src="book card hero class.png"
+                         alt="THRIVE HOLDINGS publishing project">
+                </div>
+
+                <div class="book-content">
+                    <small>PUBLISHING</small>
+                    <h3>Book Publishing</h3>
+                    <p>
+                        From manuscript submission and editorial review
+                        to production, marketing, distribution and sales.
+                    </p>
+
+                    <a href="Thrive Holdings profile and portfolio.pdf"
+                       target="_blank"
+                       class="btn btn-primary">
+                        View Profile →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Add more books here -->
+
+            <div class="book-slide">
+                <div class="book-image">
+                    <img src="books.png"
+                         alt="THRIVE HOLDINGS book publishing">
+                </div>
+
+                <div class="book-content">
+                    <small>Book Launch</small>
+                    <h3>Author & Corporate book launching</h3>
+                    <p>
+                        Publishing support including editing,
+                        proofreading, typesetting, cover design,
+                        marketing and distribution.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MARKETING ================= -->
+
+    <div class="work-category marketing-work">
+
+        <div class="category-heading">
+            <span>02</span>
+            <div>
+                <h3>Marketing Case Studies</h3>
+                <p>Strategy, digital marketing and brand growth</p>
+            </div>
+        </div>
+
+
+        <div class="case-study-grid">
+
+            <!-- MARJORINE -->
+
+            <article class="case-card">
+
+                <div class="case-image">
+                    <img src="marjorine namutebi.png"
+                         alt="Marjorine Nantambi case study">
+                </div>
+
+                <div class="case-content">
+
+                    <small>PERSONAL BRAND</small>
+
+                    <h3>Marjorine Nantambi</h3>
+
+                    <p>
+                       <strong>Marjorine Nantambi, a personal growth and finance coach, sought to establish her self as a distinct 
+corporate brand with a professional identity and consistent social media presence. Her goal was to 
+stand out as a finance coach on platformslike TikTok,YouTube,Instagram,Facebook, X, and LinkedIn. 
+Additionally, she aimed to secure partnerships with major brands and land high-value.
+influencer deals to expand her reach and credibility.</strong> 
+</p>
+<h3>SOLUTION</h3>
+<p>
+We developed a comprehensive personal branding strategy for Marjorine Nantambi, focusing on:
+<ul>
+    <li>A Professional & Cohesive Corporate Identity.
+        Creating a distinct, polished brand presence that
+attracted top-tier partnerships</li>
+    <li>Strategic Social Media Management.
+        Maintaining consistent content across platforms with a
+structured, engaging approach</li>
+    <li>Influencer Positioning & PR Growth.
+         Aligning her brand with high-impact collaborations and
+influential corporate deals</li>
+    <li>Audience Growth & Engagement Optimization. 
+        Expanding her reach across key social
+platforms through targeted content</li>
+<li>A Professional & Cohesive Corporate Identity. 
+    Creating a distinct, polished brand presence that
+attracted top-tier partnerships</li>
+<li>Strategic Social Media Management.
+    Maintaining consistent content across platforms with a
+structured, engaging approach</li>
+</ul>
+</p>
+
+                    <div class="case-results">
+
+                        <div>
+
+                            <strong>10K+</strong>
+                            <span>LinkedIn followers gained</span>
+                        </div>
+
+                        <div>
+                            <strong>1.8K+</strong>
+                            <span>YouTube subscribers</span>
+                        </div>
+
+                        <div>
+                            <strong>100K+</strong>
+                            <span>Cumulative reach</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- BREJAN -->
+
+            <article class="case-card">
+
+                <div class="case-image">
+                    <img src="brejan ventures .jpg"
+                         alt="Brejan Ventures case study">
+                </div>
+
+                <div class="case-content">
+
+                    <small>TRAVEL & TOURISM</small>
+
+                    <h3>Brejan Ventures</h3>
+
+                    <p>
+                        <strong>Brejan Ventures</strong> sought to establish its online presence from scratch. 
+                        Without social media branding or visibility,
+                        they needed a high-impact digital blaunch to generate buzz, 
+                        attract potential clients and show case their travel services</strong>
+                    </p>
+                    <H3>SOLUTION</H3>
+                    <p>We crafted a dynamic marketing strategy tailored for Brejan Ventures, incorporating:
+<ul> 
+    <li>solid digital foundation now in place,solid digital foundation now in place,
+Brejan Ventures continues to thrive and attract travel enthusiasts across platforms</li> 
+
+<LI>A Strong Corporate Identity</LI> – Developed a cohesive brand look that established
+credibility and professionalism
+<LI>Trending & Engaging Content</LI> – Leveraged travel memes, storytelling, and corporate
+identity grids to attract and retain audiences
+<LI>Strategic Social Media Management</LI> – Created structured content, including exciting
+travel tips, destination highlights, and service showcases
+<LI>Organic Growth Tactics</LI> – Focused on community engagement and shareable content 
+to build an authentic audience.
+</ul>
+</p>
+                    <div class="case-results">
+
+                        <div>
+                            <strong>200+</strong>
+                            <span>Organic followers</span>
+                        </div>
+
+                        <div>
+                            <strong>280+</strong>
+                            <span>LinkedIn followers</span>
+                        </div>
+
+                        <div>
+                            <strong>5K+</strong>
+                            <span>Organic impressions</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SHERISE -->
+
+            <article class="case-card">
+
+                <div class="case-image">
+                    <img src="she rise summit.jpg"
+                         alt="SheRise Summit case study">
+                </div>
+
+                <div class="case-content">
+
+                    <small>EVENT MARKETING</small>
+
+                    <h3>The SheRise Summit</h3>
+
+                    <p>
+                        The SheRise Summit was an annual event held in Uganda, Zanzibar, and Dubai,
+                         designed to  empower women and foster leadership. 
+                         To successfully launch the summit, attract high
+profile sponsorships, and increase attendance, 
+the organizers needed a comprehensive
+event marketing and branding strategy with high-impact 
+visuals and a structured event plan.</p>
+<H3>Strategies Implemented</H3>
+<p>We developed a multi-channel event strategy, ensuring maximum reach and 
+engagement through:</p>
+<ul>
+    
+    <li>Pre-During-Post Event Marketing Plan – Leveraged TV, social media, Google display ads,
+paid media, and CTR ads for continuous audience engagement</li>
+    <li>High-Quality Event Branding – Designed a killer flyer adaptable for billboards, social
+media, and promotional materials Professional TV Commercial – Created a compelling
+ad that elevated the event’s visibility and credibility</li>
+    <li>Sponsorship & Vendor Outreach –Strategically positioned the event to attract sponsors 
+andvendors, ensuring financial support and added value</li>
+</ul>
+
+                    <div class="case-results">
+
+                        <div>
+                            <strong>2</strong>
+                            <span>Major sponsorships</span>
+                        </div>
+
+                        <div>
+                            <strong>60+</strong>
+                            <span>Attendees registered</span>
+                        </div>
+
+                        <div>
+                            <strong>20+</strong>
+                            <span>Vendors onboarded</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SHAMIM -->
+
+            <article class="case-card">
+
+                <div class="case-image">
+                    <img src="shamim namuli.jpg"
+                         alt="Shamim Namuli case study">
+                </div>
+
+                <div class="case-content">
+
+                    <small>DIGITAL MARKETING</small>
+
+                    <h3>Shamim Namuli</h3>
+
+                    <p>
+                        Shamim Namuli, a dedicated servant of Allah and personal growth advocate, wanted to take her 
+Islamic teachings and personal brand to the next level.She sought a more professional
+and structured approach to her branding and marketing,ensuring consistency,
+engagement, and a refined corporate identity.
+                    </p>
+                    <h3>Our Solution</h3>
+                    <p>
+                       To establish a strong and professional brand, we implemented:
+Professional Branding & Visual Identity
+– Developed a cohesive brand look and feel that resonated with her audience</p>
+<ul>
+    <li>Directed a high-quality professional photoshoot, capturing corporate headshots, action
+shots for flyers, and lifestyle images.</li>
+    <li>Designed a mood board, guiding her on brand-aligned dressing and styling.
+Strategic Digital Marketing Approach</li>
+    <li>Developed a corporate profile that clearly outlined her brand purpose, values, and vision.</li>
+    <li>Created a structured digital marketing strategy, leveraging:</li>
+    <li>Marketing Funnel – A step-by-step audience engagement strategy.</li>
+    <li>Content Funnel – Organized themes around Islamic teachings and personal growth.</li>
+    <li>Islamic Calendar Integration – Aligning content with significant Islamic events for timely
+and relevant engagement</li>
+
+<br>
+<span>Through visual branding, structured marketing,
+and strategic content, Shamim Namuli’s Islamic
+brand is now thriving, engaging, and
+continuously growing in influence.</span>
+</ul>
+
+                    <div class="case-results">
+
+                        <div>
+                            <strong>3K+</strong>
+                            <span>LinkedIn followers</span>
+                        </div>
+
+                        <div>
+                            <strong>1,855</strong>
+                            <span>TikTok followers</span>
+                        </div>
+
+                        <div>
+                            <strong>1K</strong>
+                            <span>Average weekly likes</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+            <h2>
+                Work that moves brands forward.
+            </h2>
+
+            <p>
+                A selection of marketing, communication and brand
+                growth projects from our portfolio.
+            </p>
+
+        </div>
+
+
+        <div class="case-grid">
+
+
+            <article class="case-card reveal">
+
+                <div class="case-image">
+<img src="finance trust bank.jpg" alt="Finance Trust Bank case study">
+ 
+
+                </div>
+
+                    <h3>
+                        Finance Trust Bank
+                    </h3>
+
+                <div class="case-content">
+
+                    <p>
+Trust Bank was experiencing stagnation in digital performance due to
+over reliance on organic growth and traction from job posts . While job-related
+content consistently performed well, other posts—especially those about the
+bank’s products and services—struggled to gain traction or drive engagement.
+
+    </p>
+                    <p>
+<strong>Through our continous digital marketing initiatives, Finance
+Trust Bank is now one of the most active banks on Digital,
+strategically managing any crises online such as the recent
+Tier 2 Transition.</strong>
+                    </p>
+
+                    <div class="case-result">
+
+                        <div>
+                            <strong>1.1M+</strong>
+                            <span>AD VIEWS</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>POSITIVE MENTIONS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="case-card reveal">
+
+                <div class="case-image">
+<img src="PSI.jpg" alt="Population Services International case study">
+ 
+
+                </div>
+
+                    <h3>
+                        Population Services International
+                    </h3>
+
+                <div class="case-content">
+
+                    <p>
+ The Delivering Innovations in Self-Care (DISC) project has been a transformative initiative in
+Nigeria and Uganda, aiming to enhance women's knowledge and demand for self-care in sexual
+and reproductive health (SRH).By focusing on DMPA-SC and other self-injection (SI) methods,
+DISC has paved the way for self-care to become a cornerstone of SRH, giving back women the
+control of their reproductive health. Despite the potential of self-care in reproductive health,
+limited awareness, and demand for self-injection (SI) contraceptive methods posed significant
+barriers. Providers and consumers lacked the knowledge and confidence needed to adopt these
+innovative solutions, necessitating a comprehensive strategy to foster understanding, demand,
+and accessibility.
+                    </p>
+                         <p><strong>Through our digital strategy, we were also able to
+record the highest-converting Ads in Uganda and
+Nigeria during a Meta Brand Lift Study in 2021.</strong>   
+
+
+
+                         </p>
+
+                    <div class="case-result">
+
+                        <div>
+                            <strong>248M+</strong>
+                            <span>PEOPLE REACHED</span>
+                        </div>
+
+                        <div>
+                            <strong>443K+</strong>
+                            <span>WOMEN INSPIRED</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="case-card reveal">
+
+                <div class="case-image">
+<img src="Guardian pharmacy .jpg" alt="Guardian Health Pharmacy case study">
+ 
+
+                </div>
+
+                    <h3>
+                        Guardian Health Pharmacy
+                    </h3>
+
+                <div class="case-content">
+
+                    <p>
+                        Guardian Health Pharmacy Limited on its way to rebrand to My
+Dawa, was struggling with limited visibility, brand recognition and
+recall. 
+            </p>
+                    <p>
+                        <strong>Through our strategic digital marketing activities,</strong>
+                        <strong>Guardian Health Pharmacy is now a Thriving brand with a strong online presence and a growing customer base.</strong>
+                    </p>
+                    <div class="case-result">
+
+                        <div>
+                            <strong>200K+</strong>
+                            <span>MONTHLY REACH</span>
+                        </div>
+
+                        <div>
+                            <strong>5</strong>
+                            <span>ACTIVE CHANNELS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="case-card reveal">
+<div class="case-image">
+<img src="you vision.jpg" alt="YouVision Africa case study">
+ 
+
+                </div>
+
+                    <h3>
+                        <span>You Vision Africa</span>
+                    </h3>
+
+                <div class="case-content">
+
+<p>
+    YouVision Africa,a coaching and consultancy company,bringstogether coaches from across the 
+continent. In 2023, they aimed to expand their Nairobi Women’s Getaway by attracting more
+attendees from Uganda. They needed an effective event marketing strategy that would increase
+sign-ups, boost engagement, and enhance visibility for the event.
+</p>
+                    <p>
+                        <strong>Through our strategic marketing and on-the-ground
+support, YouVision Africa’s Nairobi Women’s Getaway
+became a widely recognized and highly attended event,
+successfully bringing together women from across East
+Africa.</strong>
+                    </p>
+
+                    <div class="case-result">
+
+                        <div>
+                            <strong>20K+</strong>
+                            <span>ACCOUNTS REACHED</span>
+                        </div>
+
+                        <div>
+                            <strong>10K+</strong>
+                            <span>ENGAGEMENTS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section id="process">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="eyebrow">
+                Our Credentials
+            </div>
+
+            <h3>
+       Thrive Holdings is a fully registered and licensed company, officially recognized to operate in Uganda. 
+            </h3>
+
+            <p>
+               <b>Our team consists of highly skilled professionals with Master’s and Undergraduate degrees in Journalism & Communication (Makerere University &
+Yale University), Public Relations, Literature, and Graphic Design. We are committed to excellence, creativity, and innovation, ensuring that our
+clients thrive in their respective industries.</b>
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-step reveal">
+
+                <span>01</span>
+
+                <h3>
+                    Marketing & Communication Expertise
+                </h3>
+                 <p>
+                    <p>We invest in continuous learning and professional
+development, holding certifications from globally
+recognized institutions, including:</p>
+                  <ul>
+                    <li>Google Digital Garage </li>
+                    <li>Coursera & Google Primer</li>
+                    <li>Alison Courses </li>
+                    <li>HubSpot Academy</li>
+                    <li>Meta (Facebook) Blueprint</li>
+                    </ul>
+                </p>
+
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <span>02</span>
+
+                <h3>
+                    Book Publishing & Literary Expertise
+                </h3>
+
+                <p>
+As atrusted name in publishing, we offer professional editing, 
+proofreading, typesetting, distribution, and author branding
+services. Our publishing expertise is backed by:
+Global Distribution & Self-Publishing
+Platforms – We work with:
+<ul>
+    <li>Amazon KDP</li>
+    <li>Apple Books</li>
+    <li>Google reads for book reviews</li>
+    <li>Google Play Books</li>
+    <li>wattpad & Radish</li>
+</ul>
+                </p>
+
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <span>03</span>
+
+                <h3>
+            Partnerships
+            &Collaborations
+                </h3>
+
+                <p>
+                   Our work is strengthened by strategic
+partnerships with:
+<ul>
+    
+    <li>Media houses & PR networks to enhance brand and
+author visibility.</li>
+    <li>Publishing organizations & literary bodies for industry
+recognition and compliance</li>
+    <li>Corporate brands & creative agencies for cross industry
+        opportunities</li>
+  
+</ul>
+                </p>
+
+            </div>  
+
+</section>
+
+
+<!-- =====================================================
+     TEAM
+===================================================== -->
+
+<section class="team" id="team">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="eyebrow">
+                Leadership
+            </div>
+
+            <h2>
+                Our Management Team
+            </h2>
+
+            <p>
+                <strong>Multi-disciplinary team brings together expertise
+                across marketing, communications, design and digital.</strong>
+            </p>
+
+        </div>
+
+
+        <div class="team-grid">
+
+
+            <div class="team-card reveal">
+
+                <div class="team-photo">
+
+                    <span>
+                        <img src="prossy.png"
+         alt="Prossy Nansubuga">
+                    </span>
+
+                </div>
+
+                <div class="team-info">
+
+                    <h3>
+                        Prossy Nansubuga
+                    </h3>
+
+                    <p>
+ <h4><b>Prossy Nansubuga</b> is a senior marketing, PR,
+and brand management expert with over 10 years of
+experience delivering growth-driven
+communication solutions across banking,
+health, FMCGs, NGOs, and media. She is also a
+prominent Author and copy writer.
+</h4>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="team-card reveal">
+
+                <div class="team-photo">
+
+                    <span>
+                        <span>
+    <img src="Benard Wadada.png"
+         alt="Benard Wadada"></span>
+                    </span>
+
+                </div>
+
+                <div class="team-info">
+
+                    <h3>
+                        Benard Wadada
+                    </h3>
+
+                    <p>
+ <h4><b>Benard Wadada</b> is a senior graphics designer
+responsible for conceptualizing over 20
+corporate identities of brands like Centenary
+Bank, Population Services International and
+Viya Health, supporting us with strong visuals
+aross several marketing channels.</h4>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="team-card reveal">
+
+                <div class="team-photo">
+<span>
+    <img src="Edith Ariokot.png"
+         alt="Edith Ariokot"></span>
+                    
+
+                </div>
+
+                <div class="team-info">
+                    
+                    <h3>Edith Ariokot
+
+                        </h3>
+ <h4><b>Edith Ariokot</b> is creative and passionate digital
+marketing expert with experience in managing
+several digital campaigns and strategies. She
+has worked with brands like UAP Old Mutual
+Uganda and Viya Health.</h4> 
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            Have a challenge to solve?
+        </div>
+
+        <h2>
+            Maybe you don't need another agency.
+        </h2>
+
+        <p>
+            Maybe you need a strategic partner that can show you
+            where you can go before you get there.
+        </p>
+
+        <a href="#contact" class="btn">
+            Start a Conversation →
+            
+
+        </a>
+<a href="Thrive Holdings profile and portfolio.pdf"
+       class="btn btn-primary"
+       target="_blank">
+        More About Us
+    </a>
+     </a>
+
+    <a href="Thrive Holdings profile and portfolio.pdf"
+       class="btn btn-outline"
+       download="THRIVE-HOLDINGS-Company-Profile.pdf">
+        Download Profile
+    </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-info reveal">
+
+            <div class="eyebrow">
+                Let's Talk
+            </div>
+
+            <h3>
+                Tell us where you want to go.
+            </h3>
+
+            <p>
+                Tell us what you're trying to achieve, where you're
+                stuck, or where you want to go. We'll help you figure
+                out what communication needs to do to get you there.
+            </p>
+
+
+            <div class="contact-detail">
+
+                <small>
+                    Email
+                </small>
+
+                <a href="mailto:prossy@thriveholdingsug.com">
+                    prossy@thriveholdingsug.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+                <small>
+                    Phone
+                </small>
+
+                <a href="tel:+256781070257">
+                    +256 781 070 257
+                </a>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+                <small>
+                    Location
+                </small>
+
+                <p>
+                    Bunamwaya, Wakiso, Uganda
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form reveal" id="contactForm">
+
+
+            <div class="form-group">
+
+                <label>
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="John Doe"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    placeholder="john@company.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Company
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Company name"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Service
+                </label>
+
+                <select>
+
+                    <option>
+                        Select a service
+                    </option>
+
+                    <option>
+                        Strategic Marketing
+                    </option>
+
+                    <option>
+                        Strategic Communications
+                    </option>
+
+                    <option>
+                        Book Publishing
+                    </option>
+
+                    <option>
+                        Content Studio
+                    </option>
+
+                    <option>
+                        Capacity Building
+                    </option>
+
+                    <option>
+                        Consultancy
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group full">
+
+                <label>
+                    Tell us about your challenge
+                </label>
+
+                <textarea
+                    placeholder="What are you trying to achieve?"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group full">
+
+    <a
+        href="mailto:prossy@thriveholdingsug.com"
+        class="btn btn-primary"
+        style="border:none; cursor:pointer; text-decoration:none;"
+    >
+        Start a Conversation with us →
+    </a>
+
+</div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <div class="logo-mark">
+                        T
+                    </div>
+
+                    THRIVE
+
+                </div>
+
+                <p>
+                    Strategic Communication and Marketing Consultancy.
+                    Where brands and stories thrive.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#work">Our Work</a>
+                    </li>
+
+                    <li>
+                        <a href="#team">Team</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Services
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#services">
+                            Marketing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Communications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Publishing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Content Studio
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Connect
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            TikTok
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            <span>
+                © 2026 Thrive Holdings. All rights reserved.
+            </span>
+
+            <span>
+                Wakiso, Uganda | Working across Africa
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    /* MOBILE MENU */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+
+    /* CLOSE MOBILE MENU AFTER CLICK */
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* SCROLL REVEAL ANIMATION */
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+    const revealOnScroll = () => {
+
+        revealElements.forEach(element => {
+
+            const elementTop =
+                element.getBoundingClientRect().top;
+
+            const windowHeight =
+                window.innerHeight;
+
+            if (elementTop < windowHeight - 80) {
+
+                element.classList.add("active");
+
+            }
+
+        });
+
+    };
+
+
+    window.addEventListener(
+        "scroll",
+        revealOnScroll
+    );
+
+    revealOnScroll();
+
+
+    /* CONTACT FORM */
+
+    const contactForm =
+        document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert(
+            "Thank you for contacting Thrive Holdings. We will get back to you shortly."
+        );
+
+        contactForm.reset();
+
+    });
+
+</script>
+
+</body>
+</html>
